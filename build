@@ -1,0 +1,6 @@
+#!/bin/sh
+
+docker login
+docker build -t gauge-python .
+docker tag gauge-python konekto/gauge-python:latest
+docker push konekto/gauge-python:latest

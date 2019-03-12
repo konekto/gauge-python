@@ -1,0 +1,4 @@
+#!/bin/sh
+
+docker build -t gauge-python .
+docker run -v $(pwd)/example/specs:/gauge/specs -v $(pwd)/example/step_impl:/gauge/step_impl gauge-python gauge run specs
