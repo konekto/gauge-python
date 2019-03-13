@@ -1,8 +1,8 @@
-FROM ubuntu:xenial
+FROM ubuntu:18.04
 
 RUN apt-get update && apt-get install -y \
-    python3 python3-pip \
-    libgconf2-4 libnss3-1d libxss1 \
+    python3.6 python3-pip \
+    libgconf2-4 libnss3 libxss1 libappindicator3-1\
     fonts-liberation libappindicator1 xdg-utils \
     software-properties-common \
     curl unzip wget \
