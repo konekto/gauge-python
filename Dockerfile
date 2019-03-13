@@ -67,4 +67,4 @@ RUN pip3 install getgauge
 RUN rm -rf /usr/bin/python
 RUN ln -s /usr/bin/python3 /usr/bin/python
 
-CMD gauge run specs
+CMD gauge run -i false specs
